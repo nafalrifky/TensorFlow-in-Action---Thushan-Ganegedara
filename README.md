@@ -16,23 +16,32 @@
 
 ## Brief Contents
 
-### **Part I — Getting Started**
-- **Chapter 1: Getting Started with TensorFlow 2.x**
-- **Chapter 2: Tensors and Tensor Operations**
-- **Chapter 3: Automatic Differentiation with GradientTape**
-- **Chapter 4: Building Neural Networks from Scratch**
+## Brief Contents
 
-### **Part II — Deep Learning with TensorFlow**
-- **Chapter 5: Training & Optimizing Neural Networks**
-- **Chapter 6: Convolutional Neural Networks (CNNs)**
-- **Chapter 7: Recurrent Neural Networks (RNNs)**
-- **Chapter 8: Attention Mechanisms & Transformers**
+### **Part 1 — Foundations of TensorFlow 2 and Deep Learning**
+1. **The amazing world of TensorFlow** — *page 3*  
+2. **TensorFlow 2** — *page 19*  
+3. **Keras and data retrieval in TensorFlow 2** — *page 47*  
+4. **Dipping toes in deep learning** — *page 80*  
+5. **State-of-the-art in deep learning: Transformers** — *page 119*
 
-### **Part III — Advanced Topics**
-- **Chapter 9: Transfer Learning & Fine-Tuning**
-- **Chapter 10: Generative Models (GANs & VAEs)**
-- **Chapter 11: TensorFlow Serving & Deployment**
-- **Chapter 12: Distributed Training & Performance Optimization**
+---
+
+### **Part 2 — Look Ma, No Hands! Deep Networks in the Real World**
+6. **Teaching machines to see: Image classification with CNNs** — *page 149*  
+7. **Teaching machines to see better: Improving CNNs and making them confess** — *page 194*  
+8. **Telling things apart: Image segmentation** — *page 243*  
+9. **Natural language processing with TensorFlow: Sentiment analysis** — *page 296*  
+10. **Natural language processing with TensorFlow: Language modeling** — *page 349*
+
+---
+
+### **Part 3 — Advanced Deep Networks for Complex Problems**
+11. **Sequence-to-sequence learning: Part 1** — *page 387*  
+12. **Sequence-to-sequence learning: Part 2** — *page 433*  
+13. **Transformers** — *page 453*  
+14. **TensorBoard: Big brother of TensorFlow** — *page 511*  
+15. **TFX: MLOps and deploying models with TensorFlow** — *page 554*
 
 ---
 
