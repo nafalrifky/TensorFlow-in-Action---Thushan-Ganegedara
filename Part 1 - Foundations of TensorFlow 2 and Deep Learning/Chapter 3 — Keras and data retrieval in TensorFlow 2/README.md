@@ -1,1 +1,110 @@
+# Chapter 3 — Keras and Data Retrieval in TensorFlow 2
+
+This chapter introduces how to build neural network models using Keras APIs
+and how to retrieve datasets efficiently using TensorFlow’s data pipeline tools.
+All figures are placed following the order in the original PDF.
+
+---
+
+## 3.1 Keras model-building APIs
+
+Keras provides three main approaches to build neural networks depending on the
+complexity of the architecture: the Sequential API, the Functional API, and the
+Sub-classing API. Each API offers a different balance between simplicity and
+flexibility.
+
+### Figure 3.1 — Overview of Keras APIs
+<p align='left'><img src='./figure/figure3.1.png' width='60%'></p>
+
+Before building the model, it is important to understand the dataset used for
+training. This includes exploring feature distributions, class balance, and any
+required preprocessing.
+
+### Figure 3.2 — Dataset structure example
+<p align='left'><img src='./figure/figure3.2.png' width='60%'></p>
+
+The dataset typically goes through a series of preprocessing steps such as
+decoding, resizing, normalization, batching, and shuffling.
+
+### Figure 3.3 — Data preprocessing workflow
+<p align='left'><img src='./figure/figure3.3.png' width='60%'></p>
+
+---
+
+### Sequential API
+
+The Sequential API is the simplest and most intuitive way to build neural
+networks — layers are stacked one after another with a single input and a
+single output flow.
+
+#### Figure 3.4 — Sequential model diagram
+<p align='left'><img src='./figure/figure3.4.png' width='60%'></p>
+
+---
+
+### Functional API
+
+The Functional API supports more complex models such as multi-input networks,
+multi-output networks, shared layers, and branching paths. Most modern deep
+learning architectures (ResNet, Inception, etc.) use this API.
+
+#### Figure 3.5 — Functional API model flow
+<p align='left'><img src='./figure/figure3.5.png' width='60%'></p>
+
+---
+
+### Sub-classing API
+
+Subclassing offers maximum flexibility by allowing developers to define entire
+models as custom Python classes with a custom `call()` method. This is useful
+for research and highly customized architectures.
+
+#### Figure 3.6 — Sub-classing model example
+<p align='left'><img src='./figure/figure3.6.png' width='60%'></p>
+
+---
+
+## 3.2 Retrieving data for TensorFlow/Keras models
+
+TensorFlow provides three major mechanisms for loading data:  
+the `tf.data` API, Keras DataGenerators, and the TensorFlow-Datasets (TFDS)
+package. The right method depends on dataset size and pipeline complexity.
+
+---
+
+### 3.2.1 tf.data API
+
+The `tf.data` API is the most scalable and configurable input pipeline solution.
+It supports parallel I/O, caching, shuffling, batching, mapping transformations,
+and prefetching — essential for large datasets and high-performance training.
+
+#### Figure 3.7 — End-to-end tf.data pipeline
+<p align='left'><img src='./figure/figure3.7.png' width='60%'></p>
+
+---
+
+### 3.2.2 Keras DataGenerators
+
+Keras DataGenerators are simple tools for loading images from directories.
+They support real-time augmentation and can stream data even when it doesn't
+fit in memory.
+
+---
+
+### 3.2.3 tensorflow-datasets (TFDS)
+
+TFDS provides ready-to-use datasets with automatic downloading, extraction,
+validation and standardized splits, making it the fastest option for loading
+benchmark datasets such as MNIST, CIFAR-10, and IMDB.
+
+---
+
+## Summary
+
+Chapter 3 presents the three Keras APIs for building neural networks
+(Sequential, Functional, and Sub-classing) and introduces the three main ways
+to retrieve data in TensorFlow (tf.data, DataGenerators, TFDS).  
+Together, these tools provide a flexible and scalable workflow for building
+deep learning models in TensorFlow 2.
+
 
